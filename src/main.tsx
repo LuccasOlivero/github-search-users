@@ -9,7 +9,9 @@ import { queryClient } from "./queryClient";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <div className="bg-black w-full h-full">
+        <App />
+      </div>
       <ReactQueryDevtools />
     </QueryClientProvider>
   </React.StrictMode>
